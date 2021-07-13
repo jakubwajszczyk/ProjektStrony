@@ -1,0 +1,434 @@
+body{
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 80px;
+    font-size: 0.8rem;
+}
+
+nav a{
+    padding: 0 10px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+
+    color: #00eaff;
+
+}
+
+#description{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 25vh;
+    min-height: 100px;
+    width: 100%;
+    background: rgb(236, 236, 236);
+    font-family: Calibri;
+}
+
+#text{
+    text-align: center;
+}
+
+#text h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#text p{
+    color: rgb(160, 160, 160);
+    font-size: 1.4rem;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#products > div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#products div img{
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+
+#products div:hover img{
+    transform: scale(1.1);
+}
+
+
+#products .bg{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 234, 255, 0.4);
+    background-image: url('../img/eye.png');
+    background-position: center;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#products div:hover .bg{
+   display: block;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    min-height: 100px;
+    width: 100%;
+    background-color: #1d1d1d;
+    color: rgb(177, 177, 177);
+    font-size: 0.75rem;
+    
+    
+}
+
+#footer h1{
+    color: white;
+    font-size: 0.95rem;
+}
+#footer p{
+    margin-bottom: 7px;
+}
+
+#footer div{
+    width: 100%;
+}
+
+#footer .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;        
+}
+#footer .menu ul{
+    list-style: none;  
+}
+
+#footer .meida ul{
+    list-style: none;
+    
+}
+
+#menu ul, li{
+    margin-bottom: 4px;
+}
+
+#footer .company-name{
+    margin-left: 5%;
+}
+
+#footer .company-name h1{
+    font-weight: bold;
+}
+
+#me img{
+    width: 100%;
+}
+
+#bg-image{
+    position: relative;
+    height: 28vh;
+    overflow: hidden;
+    min-height: 100px;
+}
+
+#bg-image .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    z-index: 10;
+    color: white;
+}
+
+#bg-image .dark-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+#bg-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+#bg-image h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#bg-image h3{
+    text-align: center;
+}
+
+#desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    min-height: 100px;
+    width: 100%;
+    background-color: #03d8cd;
+    color: #fff;
+    font-size: 0.85rem;
+}
+#desc div{
+    margin-left: 1%;
+    margin-right: 8%;
+}
+
+#desc h3{
+    margin-bottom: 5px;
+}
+
+#aboutme{
+    align-items: center;
+    height: 500px;
+    min-height: 100px;
+    width: 100%;
+    background-color: #bcc2c2;
+}
+
+#left{
+    float:left;
+}
+
+#textabout{
+  float:left;
+  width:30%;
+  margin:3%;
+  padding:2%;
+  margin-left: 5%;
+}
+
+#textabout img{
+    height: 100px;
+    padding-top: 30px;
+}
+
+#aboutme h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+#aboutme p{
+    color:rgb(121, 121, 121);
+}
+
+#project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    min-height: 200px;
+    width: 100%;
+}
+
+#project h1{
+    font-weight: bold;
+    font-size: 1.5rem; 
+    margin-bottom: 25px;
+}
+
+#project p{
+    color: #a0a0a0;
+    font-size: 0.9rem; 
+    margin-bottom: 10px;
+}
+
+#project button{
+    margin-top: 25px;
+    background-color: #03d8cd;
+    padding: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    border: none;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+#contactinfo{
+ background-color: rgb(235, 235, 235);
+}
+
+input::placeholder{
+margin-left:15px;
+}
+
+#textA{
+    float:left;
+    width:35%;
+    margin-left: 10%;
+    margin-right: 1%;
+}
+
+#textT{
+    text-align: left;
+    padding-top: 85px;
+    padding-left: 60px;
+    padding-right: 15%;
+}
+
+#textP{
+    padding-top: 30px;
+    padding-left: 60px;
+    float: left;
+}
+
+#form{
+  float:right;
+  width:40%;
+  margin:3%;
+  padding:2%;
+
+}
+
+#textT h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#textT p{
+    color: rgb(160, 160, 160);
+    font-size: 1.2rem;
+    padding-bottom: 7px;
+}
+
+#textP p{
+    color: rgb(160, 160, 160);
+    font-size: 1.2rem;
+}
+
+#form input[type=text] {
+    border: none;
+    height: 2.5rem;
+    width: 13.5rem;
+}
+
+#form input[type=text]#text1{
+    margin-left: 42px;
+    width: 13.5rem;
+}
+
+#form input[type=text]#text2{
+    width: 30rem;
+}
+
+#form input[type=text]#text3{
+    width: 30rem;
+    height: 8rem;
+}
+
+#form input[type=button]{
+    margin-top: 15px;
+    background-color: #03d8cd;
+    padding: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+    border: none;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+#map{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 150px;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  * {box-sizing:border-box}
+  
+  .slides-container {
+    position: relative;
+    width: 80%;
+    height: 700px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 10%;
+  }
+  
+  .slides-container div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slide {
+    visibility: hidden;
+    opacity: 0;
+    /*padding: 2em 2em 5em;*/
+    color: white;
+    background: #4d5256;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slides-container input[type="radio"]:checked + .slide {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .hidden {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  label.slide-dot {
+    position: absolute;
+    z-index: 100;
+    bottom: 2em;
+    width: 1em;
+    height: 1em;
+    margin-left: 0em;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slides-container input[type="radio"]:checked ~ label {
+    background: #ff0000;
+    transition: background .1s linear;
+  }
